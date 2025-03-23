@@ -28,10 +28,11 @@ public class HexdumpTranslator {
                 //System.out.print(counter);
                 String y = x.toString().toUpperCase();
 
-
+                //This ignores spaces or #
                 if (y.equals(" ") || y.equals("#")) {
+                //read the next character
                     data = reader.read();
-
+                
                 } else {
                     //System.out.print(counter);
                     hex[counter] = y;
